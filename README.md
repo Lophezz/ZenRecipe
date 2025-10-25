@@ -52,3 +52,58 @@ Se você quiser modificar os estilos (arquivos `.html` que usam classes do Tailw
 ## 👤 Autor
 
 * **GitHub:** [@Lophezz](https://github.com/Lophezz)
+
+# ZenRecipe (Inglês) 🍣
+
+ZenRecipe is a front-end project for a fictional Japanese recipe website. The goal was to create a clean, modern, and responsive interface, demonstrating the use of modern web technologies.
+
+This project was developed as an assignment for an English class, with the objective of presenting a functional website.
+
+## ✨ Features
+
+* **Responsive Design:** Fully adaptive for desktops, tablets, and mobile phones (Mobile-First).
+* **Modern Interface:** A clean and minimalist design focused on culinary arts, built with Tailwind CSS.
+* **Interactivity:** Basic interactive elements (like the mobile menu) built with vanilla JavaScript.
+
+## 🛠️ Technologies Used
+
+This project was built with the following technologies:
+
+* **HTML5:** For semantic markup and content structure.
+* **Tailwind CSS:** A utility-first CSS framework for rapid and responsive styling.
+* **CSS3:** For custom styles and animations.
+* **JavaScript (ES6+):** For client-side interactivity.
+
+## 📂 How to View the Project
+
+Since the compiled CSS is already included in the repository (in the `/public/css` folder), you do not need to install anything to view the project.
+
+1.  **Clone the repository:**
+    ```bash
+    git clone [https://github.com/Lophezz/ZenRecipe.git](https://github.com/Lophezz/ZenRecipe.git)
+    ```
+2.  **Navigate to the project folder:**
+    ```bash
+    cd ZenRecipe
+    ```
+3.  **Open the `index.html` file in your preferred browser.**
+
+---
+
+### Development
+
+If you want to modify the styles (the `.html` files using Tailwind classes) and recompile the CSS, you will need to have [Node.js](https://nodejs.org/) installed.
+
+1.  **Install npm dependencies:**
+    ```bash
+    npm install
+    ```
+2.  **Run the Tailwind build script (defined in `package.json`):**
+    ```bash
+    npm run build
+    ```
+    (This will watch for changes in your HTML files and generate the `style.css` file in the `/public/css` folder.)
+
+## 👤 Author
+
+* **GitHub:** [@Lophezz](https://github.com/Lophezz)
