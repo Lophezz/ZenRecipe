@@ -7,12 +7,6 @@
     <link rel="stylesheet" href="/front/style.css">
     <link rel="icon" type="image/png" href="/front/image/RecipeLogo.png">
     <title>Zen Recipe</title>
-
-    <style>
-        html {
-            scroll-behavior: smooth;
-        }
-    </style>
 </head>
 
 <body class="min-h-screen bg-gradient-to-t from-red-900 via-red-800 to-red-700 text-white">
@@ -68,11 +62,12 @@
     </nav>
 
 
-    <main>
-        <section id="home" class="max-w-7xl mx-auto px-6 py-24 mt-20 grid md:grid-cols-2 gap-8 items-center relative">
+    <!-- ================= HERO ================= -->
+    <section class="max-w-7xl mx-auto px-6 py-24 grid md:grid-cols-2 gap-8 items-center relative">
 
-            <div class="relative z-20">
-                <h1 class="text-6xl md:text-7xl font-extrabold mb-8 text-white drop-shadow-2xl leading-tight relative rounded-lg overflow-hidden hover:-translate-y-0.5 hover:scale-102 transform
+        <!-- Texto -->
+        <div class="relative z-20">
+            <h1 class="text-6xl md:text-7xl font-extrabold mb-8 text-white drop-shadow-2xl leading-tight relative rounded-lg overflow-hidden hover:-translate-y-0.5 hover:scale-102 transform
                 transition-all duration-300">
                     ZEN RECIPE
                 </h1>
@@ -92,54 +87,61 @@
                 </p>
             </div>
 
+        <!-- Imagem de pratos japoneses invadindo o texto -->
+        <div class="relative -ml-12 md:ml-0">
+            <img src="/front/image/ComidaHome.png" alt="Pratos japoneses"
+                class="relative z-10 md:-right-20 lg:-right-32 -translate-x-4 md:translate-x-0 max-w-full object-cover scale-125">
+        </div>
+    </section>
 
-            <div class="relative -ml-12 md:ml-0">
-                <img src="/front/image/ComidaHome.png" alt="Pratos japoneses"
-                    class="relative z-10 md:-right-20 lg:-right-32 -translate-x-4 md:translate-x-0 max-w-full object-cover scale-125">
-            </div>
-        </section>
 
-
-        <section id="recipes" class="bg-red-900/80 py-16">
-            <h2 class="text-center text-6xl font-bold mb-12 drop-shadow-2xl leading-tight relative rounded-lg overflow-hidden hover:-translate-y-0.5 hover:scale-100 transform
+    <!-- ================= RECIPES ================= -->
+    <section class="bg-red-900/80 py-16">
+        <h2 class="text-center text-6xl font-bold mb-12 drop-shadow-2xl leading-tight relative rounded-lg overflow-hidden hover:-translate-y-0.5 hover:scale-100 transform
                 transition-all duration-300">RECIPES</h2>
-            <div class="max-w-6xl mx-auto grid grid-cols-2 md:grid-cols-3 gap-6 px-6">
-                <div class="relative rounded-lg overflow-hidden shadow-lg hover:shadow-2xl hover:-translate-y-0.5 hover:scale-98 transform
+        <div class="max-w-6xl mx-auto grid grid-cols-2 md:grid-cols-3 gap-6 px-6">
+            <!-- Hot dishes -->
+            <div class="relative rounded-lg overflow-hidden shadow-lg hover:shadow-2xl hover:-translate-y-0.5 hover:scale-98 transform
                 transition-all duration-300">
-                    <img src="/front/image/HotDishes.png" alt="Hot Dishes">
-                    <div class="absolute inset-0 bg-black/50 flex items-center justify-center">
-                        <span class="font-bold text-xl">HOT DISHES</span>
-                    </div>
+                <img src="/front/image/HotDishes.png" alt="Hot Dishes">
+                <div class="absolute inset-0 bg-black/50 flex items-center justify-center">
+                    <span class="font-bold text-xl">HOT DISHES</span>
                 </div>
-                <div class="relative rounded-lg overflow-hidden shadow-lg hover:shadow-2xl hover:-translate-y-0.5 hover:scale-98 transform
+            </div>
+            <!-- Cold dishes -->
+            <div class="relative rounded-lg overflow-hidden shadow-lg hover:shadow-2xl hover:-translate-y-0.5 hover:scale-98 transform
                 transition-all duration-300">
-                    <img src="/front/image/ColdDishes.png" alt="Cold Dishes">
-                    <div class="absolute inset-0 bg-black/50 flex items-center justify-center">
-                        <span class="font-bold text-xl">COLD DISHES</span>
-                    </div>
+                <img src="/front/image/ColdDishes.png" alt="Cold Dishes">
+                <div class="absolute inset-0 bg-black/50 flex items-center justify-center">
+                    <span class="font-bold text-xl">COLD DISHES</span>
                 </div>
-                <div class="relative rounded-lg overflow-hidden shadow-lg hover:shadow-2xl hover:-translate-y-0.5 hover:scale-98 transform
+            </div>
+            <!-- Sweets -->
+            <div class="relative rounded-lg overflow-hidden shadow-lg hover:shadow-2xl hover:-translate-y-0.5 hover:scale-98 transform
                 transition-all duration-300">
-                    <img src="/front/image/Sweets.png" Sweets">
-                    <div class="absolute inset-0 bg-black/50 flex items-center justify-center">
-                        <span class="font-bold text-xl">SWEETS</span>
-                    </div>
+                <img src="/front/image/Sweets.png" Sweets">
+                <div class="absolute inset-0 bg-black/50 flex items-center justify-center">
+                    <span class="font-bold text-xl">SWEETS</span>
                 </div>
-                <div class="relative rounded-lg overflow-hidden shadow-lg hover:shadow-2xl hover:-translate-y-0.5 hover:scale-98 transform
+            </div>
+            <!-- Drinks -->
+            <div class="relative rounded-lg overflow-hidden shadow-lg hover:shadow-2xl hover:-translate-y-0.5 hover:scale-98 transform
                 transition-all duration-300">
-                    <img src="/front/image/Drinks.png" alt="Drinks">
-                    <div class="absolute inset-0 bg-black/50 flex items-center justify-center">
-                        <span class="font-bold text-xl">DRINKS</span>
-                    </div>
+                <img src="/front/image/Drinks.png" alt="Drinks">
+                <div class="absolute inset-0 bg-black/50 flex items-center justify-center">
+                    <span class="font-bold text-xl">DRINKS</span>
                 </div>
-                <div class="relative rounded-lg overflow-hidden shadow-lg hover:shadow-2xl hover:-translate-y-0.5 hover:scale-98 transform
+            </div>
+            <!-- Desserts -->
+            <div class="relative rounded-lg overflow-hidden shadow-lg hover:shadow-2xl hover:-translate-y-0.5 hover:scale-98 transform
                 transition-all duration-300">
-                    <img src="/front/image/Desserts.png" alt="Desserts">
-                    <div class="absolute inset-0 bg-black/50 flex items-center justify-center">
-                        <span class="font-bold text-xl">DESSERTS</span>
-                    </div>
+                <img src="/front/image/Desserts.png" alt="Desserts">
+                <div class="absolute inset-0 bg-black/50 flex items-center justify-center">
+                    <span class="font-bold text-xl">DESSERTS</span>
                 </div>
-                <div class="relative rounded-lg overflow-hidden shadow-lg hover:shadow-2xl hover:-translate-y-0.5 hover:scale-98 transform
+            </div>
+            <!-- Snacks -->
+            <div class="relative rounded-lg overflow-hidden shadow-lg hover:shadow-2xl hover:-translate-y-0.5 hover:scale-98 transform
                 transition-all duration-300">
                     <img src="/front/image/Snacks.png" alt="Snacks">
                     <div class="absolute inset-0 bg-black/50 flex items-center justify-center">
@@ -149,52 +151,60 @@
             </div>
         </section>
 
-        <section id="reviews" class="py-16">
-            <h2 class="text-center text-6xl font-bold mb-12 drop-shadow-2xl leading-tight relative rounded-lg overflow-hidden hover:-translate-y-0.5 hover:scale-100 transform
+    <!-- ================= REVIEWS ================= -->
+    <section class="py-16">
+        <h2 class="text-center text-6xl font-bold mb-12 drop-shadow-2xl leading-tight relative rounded-lg overflow-hidden hover:-translate-y-0.5 hover:scale-100 transform
                 transition-all duration-300">REVIEWS</h2>
             <div class="max-w-6xl mx-auto grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 px-6">
 
-                <div
-                    class="bg-red-900/70 p-4 rounded-lg shadow-lg text-center transform hover:-translate-y-2 hover:scale-105 hover:shadow-2xl transition-all duration-300">
-                    <img src="/front/image/SalmonShushiRolls.png" alt="Salmon Sushi Rolls"
-                        class="mx-auto mb-4 rounded-lg">
-                    <h3 class="text-xl font-bold text-white mb-2">Salmon Sushi Rolls</h3>
-                    <p class="text-yellow-400 text-lg">⭐⭐⭐⭐⭐</p>
-                </div>
+            <!-- Card 1 -->
+            <div
+                class="bg-red-900/70 p-4 rounded-lg shadow-lg text-center transform hover:-translate-y-2 hover:scale-105 hover:shadow-2xl transition-all duration-300">
+                <img src="/front/image/SalmonShushiRolls.png" alt="Salmon Sushi Rolls" class="mx-auto mb-4 rounded-lg">
+                <h3 class="text-xl font-bold text-white mb-2">Salmon Sushi Rolls</h3>
+                <p class="text-yellow-400 text-lg">⭐⭐⭐⭐⭐</p>
+            </div>
 
-                <div
-                    class="bg-red-900/70 p-4 rounded-lg shadow-lg text-center transform hover:-translate-y-2 hover:scale-105 hover:shadow-2xl transition-all duration-300">
-                    <img src="/front/image/MatchaCheesecake.png" alt="Matcha Cheesecake"
-                        class="mx-auto mb-4 rounded-lg">
-                    <h3 class="text-xl font-bold text-white mb-2">Matcha Cheesecake</h3>
-                    <p class="text-yellow-400 text-lg">⭐⭐⭐⭐⭐</p>
-                </div>
+            <!-- Card 2 -->
+            <div
+                class="bg-red-900/70 p-4 rounded-lg shadow-lg text-center transform hover:-translate-y-2 hover:scale-105 hover:shadow-2xl transition-all duration-300">
+                <img src="/front/image/MatchaCheesecake.png" alt="Matcha Cheesecake" class="mx-auto mb-4 rounded-lg">
+                <h3 class="text-xl font-bold text-white mb-2">Matcha Cheesecake</h3>
+                <p class="text-yellow-400 text-lg">⭐⭐⭐⭐⭐</p>
+            </div>
 
-                <div
-                    class="bg-red-900/70 p-4 rounded-lg shadow-lg text-center transform hover:-translate-y-2 hover:scale-105 hover:shadow-2xl transition-all duration-300">
-                    <img src="/front/image/TonkotsuRamen.png" alt="Tonkotsu Ramen" class="mx-auto mb-4 rounded-lg">
-                    <h3 class="text-xl font-bold text-white mb-2">Tonkotsu Ramen</h3>
-                    <p class="text-yellow-400 text-lg">⭐⭐⭐⭐⭐</p>
-                </div>
+            <!-- Card 3 -->
+            <div
+                class="bg-red-900/70 p-4 rounded-lg shadow-lg text-center transform hover:-translate-y-2 hover:scale-105 hover:shadow-2xl transition-all duration-300">
+                <img src="/front/image/TonkotsuRamen.png" alt="Tonkotsu Ramen" class="mx-auto mb-4 rounded-lg">
+                <h3 class="text-xl font-bold text-white mb-2">Tonkotsu Ramen</h3>
+                <p class="text-yellow-400 text-lg">⭐⭐⭐⭐⭐</p>
+            </div>
 
-                <div
-                    class="bg-red-900/70 p-4 rounded-lg shadow-lg text-center transform hover:-translate-y-2 hover:scale-105 hover:shadow-2xl transition-all duration-300">
-                    <img src="/front/image/CaliforniaRoll.png" alt="California Roll" class="mx-auto mb-4 rounded-lg">
-                    <h3 class="text-xl font-bold text-white mb-2">California Roll</h3>
-                    <p class="text-yellow-400 text-lg">⭐⭐⭐⭐⭐</p>
-                </div>
+            <!-- Card 4 -->
+            <div
+                class="bg-red-900/70 p-4 rounded-lg shadow-lg text-center transform hover:-translate-y-2 hover:scale-105 hover:shadow-2xl transition-all duration-300">
+                <img src="/front/image/CaliforniaRoll.png" alt="California Roll" class="mx-auto mb-4 rounded-lg">
+                <h3 class="text-xl font-bold text-white mb-2">California Roll</h3>
+                <p class="text-yellow-400 text-lg">⭐⭐⭐⭐⭐</p>
+            </div>
 
             </div>
         </section>
 
 
-        <section id="japan" class="relative py-16">
-            <div class="absolute inset-0">
-                <img src="/front/image/JapanCity.png" alt="Japan City" class="w-full h-full brightness-50 ">
-                <div class="absolute inset-0 bg-red-900/70"></div>
-            </div>
-            <div class="relative z-10 max-w-6xl mx-auto px-6">
-                <h2 class="text-center text-6xl font-bold mb-10 text-white drop-shadow-lg drop-shadow-2xl leading-tight relative rounded-lg overflow-hidden hover:-translate-y-0.5 hover:scale-100 transform
+    <!-- ================= JAPAN ================= -->
+    <section class="relative py-16">
+        <!-- Background Image -->
+        <div class="absolute inset-0">
+            <img src="/front/image/JapanCity.png" alt="Japan City" class="w-full h-full brightness-50 ">
+            <!-- Overlay escuro -->
+            <div class="absolute inset-0 bg-red-900/70"></div>
+        </div>
+        <!-- Conteúdo -->
+        <div class="relative z-10 max-w-6xl mx-auto px-6">
+            <!-- Título -->
+            <h2 class="text-center text-6xl font-bold mb-10 text-white drop-shadow-lg drop-shadow-2xl leading-tight relative rounded-lg overflow-hidden hover:-translate-y-0.5 hover:scale-100 transform
                 transition-all duration-300">JAPAN</h2>
                 <div class="relative z-10 max-w-6xl mx-auto grid md:grid-cols-2 gap-8 px-6 items-center">
                     <div>
@@ -231,26 +241,23 @@
         </section>
 
 
-        <section id="about" class="py-16 max-w-6xl mx-auto px-6">
-            <h2 class="text-center text-6xl font-bold mb-10 drop-shadow-lg drop-shadow-2xl leading-tight relative rounded-lg overflow-hidden hover:-translate-y-0.5 hover:scale-100 transform
+    <!-- ================= ABOUT ================= -->
+    <section class="py-16 max-w-6xl mx-auto px-6">
+        <h2 class="text-center text-6xl font-bold mb-10 drop-shadow-lg drop-shadow-2xl leading-tight relative rounded-lg overflow-hidden hover:-translate-y-0.5 hover:scale-100 transform
                 transition-all duration-300">ABOUT</h2>
-            <p class="bg-black text-white text-center max-w-3xl mx-auto p-8 rounded-lg leading-relaxed shadow-lg">
-                Zen Recipe was born from a deep love for Japanese culture and the art of cooking. More than just a
-                recipe
-                site, it is a space dedicated to sharing the essence of Japan through flavors, traditions, and culinary
-                creativity.
-                At the heart of Zen Recipe is Master Suzume Mayko, the chef and visionary behind every dish. With years
-                of
-                dedication to Japanese cuisine, he combines authenticity with simplicity, creating recipes that are both
-                true to tradition and accessible to anyone who wishes to practice and enjoy them at home.
-                For Master Mayko, food is more than nourishment—it is harmony, respect, and beauty served on every
-                plate.
-                His mission is to inspire people around the world to discover, cook, and fall in love with the richness
-                of
-                Japanese cuisine.
-                Zen Recipe is the bridge between the Japanese kitchen and your home, inviting you to explore, learn, and
-                celebrate this extraordinary culinary journey.
-            </p>
+        <p class="bg-black text-white text-center max-w-3xl mx-auto p-8 rounded-lg leading-relaxed shadow-lg">
+            Zen Recipe was born from a deep love for Japanese culture and the art of cooking. More than just a recipe
+            site, it is a space dedicated to sharing the essence of Japan through flavors, traditions, and culinary
+            creativity.
+            At the heart of Zen Recipe is Master Suzume Mayko, the chef and visionary behind every dish. With years of
+            dedication to Japanese cuisine, he combines authenticity with simplicity, creating recipes that are both
+            true to tradition and accessible to anyone who wishes to practice and enjoy them at home.
+            For Master Mayko, food is more than nourishment—it is harmony, respect, and beauty served on every plate.
+            His mission is to inspire people around the world to discover, cook, and fall in love with the richness of
+            Japanese cuisine.
+            Zen Recipe is the bridge between the Japanese kitchen and your home, inviting you to explore, learn, and
+            celebrate this extraordinary culinary journey.
+        </p>
 
             <div class="mt-10 flex flex-col md:flex-row items-center gap-6">
                 <img src="/front/image/Chef.png" alt="Chef" class="w-40 h-40 rounded-full object-cover shadow-lg">
@@ -266,9 +273,11 @@
         </section>
     </main>
 
+    <!-- ================= ADDRESS ================= -->
     <section class="bg-red-900/80 py-16 text-center">
         <h2 class="text-2xl font-bold mb-6">ADDRESS</h2>
-        </section>
+        <!-- <img src="/front/image/map.png" alt="Mapa" class="mx-auto rounded-lg shadow-lg"> -->
+    </section>
 
     <footer class="bg-red-950 py-6 text-center text-gray-300">
         <p>© 2024 Zen Recipe - All Rights Reserved</p>
